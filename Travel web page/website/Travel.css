@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    text-decoration: none;
+    list-style: none;
+   scroll-behavior: smooth;
+
+}
+/* Navbar start */
+
+#navbar{
+    background: rgb(188, 221, 224);
+}
+#logo{
+    font-size: 35px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+}
+
+#logo span{    color: #bec62d;
+}
+
+.navbar-toggler span{
+    color: #bec62d;
+}
+
+.navbar-nav{
+    margin-left: 20px;
+
+}
+
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.6s  ease;
+
+}
+
+.nav-item .nav-link:hover{
+    background: #bec62d ;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+
+}
+
+/* Navbar end */
+
+/*home section start*/
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(./background5.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+    
+
+}
+
+.home  .content{
+    text-align: center;
+    padding-top: 200px;
+
+}
+
+.home .content h5{
+    color: rgb(239, 113, 2);
+    font-size: 50px;
+    font-weight: 550;
+    text-shadow: 0px 1px black;
+
+}
+.home .content h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 5500;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+
+}
+
+.changecontent::after{
+    content: '';
+    color: rgb(38, 199, 26);
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content:"France";}
+    10%{content:"India";}
+    20%{content:"United States";}
+    30%{content:"Italy";}
+    40%{content:"Australia";}
+    50%{content:"United kingdom";}
+    60%{content:"Spain";}
+    70%{content:"China";}
+    80%{content:"Turkey";}
+    90%{content:"Germany";}
+    100%{content:"Mexico";}
+    110%{content:"Japan";}
+}
+
+.home .content p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    text-align:center;
+}
+
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.home .content a:hover{
+    background: #bec62d;
+    color: white;
+}
+
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+    @media (max-width:850px){
+        .home{
+           font-size: 25px;
+        }
+}
+.home .content h1{
+    font-size: 38px;
+
+}
+.home .content p{
+    font-size: 20px;
+}
+}
+/*home section end*/
+
+/*section book start*/
+.book{
+    background: whitesmoke;
+    padding: 50px;
+
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: orange;
+
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+
+}
+.book .row{
+    margin-top: 30px;
+
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 1px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: orange;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+
+}
+.book .submit:hover{
+    width: 170px;
+
+}
+
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+     padding: 20px;
+    }
+}
+/*section book end*/
+
+
+/*Section Packages Start*/
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1{
+    color: orange;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1)0px 4px 12px ;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: orange;
+}
+.star i{
+    font-size: 15px;
+}
+
+.packages .card .card-body h6{
+    font-size: 20px;
+
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: orange;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+
+/*Section Packages end*/
+
+/* section services start*/ 
+.services{
+    background: whitesmoke;
+    margin-top: 50px;
+} 
+
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px ;
+    border: none;
+    cursor: pointer;
+}
+
+.services .card i {
+    font-size: 80px;
+    text-align: center;
+    color: orange;
+    margin-top: 20px;
+}
+
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+
+/*section services end*/
+
+/*section gallery start*/
+.gallary{
+    margin-top: 50px;
+
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+.gallary .card img:hover{
+    transition: scale(1.1);
+}
+
+
+/*section gallery end*/
